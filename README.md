@@ -1,4 +1,5 @@
 # JDI - Jopic Dependency Injection
+[![Build Status](https://travis-ci.org/fetzi/jdi.svg?branch=master)](https://travis-ci.org/fetzi/jdi)
 
 This repository provides a very basic and easy to use dependency injection "framework" for PHP.
 
@@ -56,6 +57,3 @@ I'm currently working on an easy way for injecting properties and will also prov
 
 ## Request for comment
 If you find any bugs or if you find something (or everything ;-) ) inconvenient please don't hesitate to contact me either directly via github or via e-mail (admin [at] jopic.at).
-
-## Build Status
-[![Build Status](https://travis-ci.org/fetzi/jdi.svg?branch=master)](https://travis-ci.org/fetzi/jdi)
