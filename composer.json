@@ -1,6 +1,7 @@
 {
     "name": "jopic/jdi",
     "description": "simple dependency injection framework",
+    "version": "1.0.0",
     "require": {
         "doctrine/common": "*",
         "hafriedlander/phockito": "1.0.*"
