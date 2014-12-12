@@ -1,6 +1,10 @@
 <?php
 namespace Jopic\DI;
 
+/**
+ * Class JDIBaseClass
+ * @package Jopic\DI
+ */
 abstract class JDIBaseClass {
 
     /**

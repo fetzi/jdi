@@ -3,6 +3,10 @@ namespace Jopic\DI;
 
 use Jopic\DI\Exception\ContainerException;
 
+/**
+ * Class DependencyInjection
+ * @package Jopic\DI
+ */
 class DependencyInjection {
 	
 	private static $instance;
