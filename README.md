@@ -53,7 +53,8 @@ Here is a short example of a Injectable class:
 This code assures that if a object with the name "foo" is registered in the dependency injection container it will be available in this class instances automatically.
 
 ## Further Development
-I'm currently working on an easy way for injecting properties and will also provide information about property handling.
+* Injection of properties
+* Lazy Injection - suspend closure call to first object usage
 
 ## Request for comment
 If you find any bugs or if you find something (or everything ;-) ) inconvenient please don't hesitate to contact me either directly via github or via e-mail (admin [at] jopic.at).
