@@ -67,7 +67,7 @@ Here is a short example of a class with directly injected and lazily injected pr
      * this value gets injected just before the first getFoo2() call
      * @inject
      **/
-    private $foo2;
+    protected $foo2;
     
     public function __construct() {
         parent::__construct($this);
