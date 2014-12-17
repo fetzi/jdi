@@ -64,7 +64,7 @@ Here is a short example of a class with directly injected and lazyly injected pr
     private $foo;
     
     /**
-     * this value gets instantiated just before the first getFoo2() call
+     * this value gets injected just before the first getFoo2() call
      * @inject
      **/
     private $foo2;
