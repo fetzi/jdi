@@ -52,9 +52,38 @@ Here is a short example of a Injectable class:
 
 This code assures that if a object with the name "foo" is registered in the dependency injection container it will be available in this class instances automatically.
 
+## Lazy Injection
+If you define a property as protected, the class constructor of JDIBaseClass will automatically inject this property lazyly. That means that the property closure gets executed just before the first property usage.
+
+Here is a short example of a class with directly injected and lazyly injected properties:
+<pre><code>class SampleClass extends Jopic\DI\JDIBaseClass {
+    /**
+     * this value gets injected on constructor call
+     * @inject
+     */
+    private $foo;
+    
+    /**
+     * this value gets instantiated just before the first getFoo2() call
+     * @inject
+     **/
+    private $foo2;
+    
+    public function __construct() {
+        parent::__construct($this);
+    }
+    
+    public function getFoo() {
+        return $this->foo;
+    }
+    
+    public function getFoo2() {
+        return $this->foo2;
+    }
+}</code></pre>
+
 ## Further Development
 * Injection of properties
-* Lazy Injection - suspend closure call to first object usage
 
 ## Request for comment
 If you find any bugs or if you find something (or everything ;-) ) inconvenient please don't hesitate to contact me either directly via github or via e-mail (admin [at] jopic.at).
