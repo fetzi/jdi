@@ -29,6 +29,21 @@ class Container {
 	}
 
 	/**
+	 * returns the closure object stored with the given object name
+	 *
+	 * @param $name name of closure object
+	 * @return mixed closure function
+	 * @throws Exception\ContainerException throws the exception if the given injectable object is not defined in the container
+	 */
+	public function getClosure($name) {
+		if(!array_key_exists($name, $this->container)) {
+			throw new ContainerException("Unable to find Injector for $name!");
+		}
+
+		return $this->container[$name];
+	}
+
+	/**
 	 * returns the result of the closure function stored with the given object name
 	 *
 	 * @param $name the object name
@@ -36,11 +51,8 @@ class Container {
 	 * @throws ContainerException throws an exception if there is no object with the given name registered in the container
 	 */
 	public function get($name) {
-		if(!array_key_exists($name, $this->container)) {
-			throw new ContainerException("Unable to find Injector for $name!");
-		}
-
-		return $this->container[$name]();
+		$closure = $this->getClosure($name);
+		return $closure();
 	}
 
 	/**

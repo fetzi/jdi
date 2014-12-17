@@ -7,5 +7,9 @@ $container->register("foo", function() {
     return new \Jopic\SampleService();
 });
 
+$container->register("foo2", function() {
+	return new \Jopic\SampleService();
+});
+
 $di = \Jopic\DI\DependencyInjection::getInstance();
 $di->setContainer($container);
