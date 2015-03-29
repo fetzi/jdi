@@ -1,7 +1,17 @@
 {
     "name": "jopic/jdi",
     "description": "simple dependency injection framework",
-    "version": "1.0.0",
+    "keywords": ["di","dependency injection"],
+    "homepage": "https://github.com/fetzi/jdi",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Johannes Pichler",
+            "email": "admin@jopic.at",
+            "homepage": "https://www.jopic.at",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "doctrine/common": "*",
         "hafriedlander/phockito": "1.0.*"
