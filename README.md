@@ -4,13 +4,7 @@
 This repository provides a very basic and easy to use dependency injection "framework" for PHP.
 
 ## Installation
-You basically need to add my github repository to the "repositories" section of your `composer.json` file.
-<pre><code>{
-"type": "vcs",
-"url": "https://github.com/fetzi/jdi"
-}</code></pre>
-
-Now you can add <code>"jopic/jdi": "*"</code> to your <code>require</code> section of your `composer.json` file.
+You basically only need to add the following dependency `"jopic/jdi": "1.0.0"` into your `composer.json` file.
 
 ## Usage - Container Setup
 
